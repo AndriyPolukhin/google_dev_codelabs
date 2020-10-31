@@ -1,0 +1,38 @@
+{
+  "name": "space-explorer-server",
+  "version": "1.0.0",
+  "description": "Space Explorer Server, utilizing the spaceX API",
+  "main": "src/index.js",
+  "author": "Andriy Polukhin",
+  "license": "ISC",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "nodemon src/index.js",
+    "start:ci": "node src/index.js"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__utils"
+    ]
+  },
+  "dependencies": {
+    "apollo-datasource": "^0.7.2",
+    "apollo-datasource-rest": "^0.9.4",
+    "apollo-server": "^2.18.0",
+    "apollo-server-testing": "^2.18.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "isemail": "^3.2.0",
+    "nodemon": "^2.0.4",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "jest": "^26.4.2",
+    "nock": "^13.0.4",
+    "node-fetch": "^2.6.1"
+  }
+}
